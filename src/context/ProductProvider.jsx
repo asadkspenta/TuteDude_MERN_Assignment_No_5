@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 
 const ProductProvider = ({ children }) => {
   const { data, loading, error, isOnline } = useFetch(
-    "https://api.escuelajs.co/api/v1/products",
+    import.meta.env.VITE_API_URL,
   );
 
   return (
